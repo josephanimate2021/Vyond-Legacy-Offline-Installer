@@ -1,7 +1,7 @@
-:: Wrapper: Offline Installer
+:: Vyond Legacy: Offline Installer
 :: Author: joseph the animator#2292
 :: License: MIT
-title Wrapper: Offline Installer [Initializing...]
+title Vyond Legacy: Offline Installer [Initializing...]
 
 ::::::::::::::::::::
 :: Initialization ::
@@ -19,21 +19,20 @@ pushd "%~dp0"
 :: Check *again* because it seems like sometimes it doesn't go into dp0 the first time???
 pushd "%~dp0"
 
-:::::::::::::::::::::::
-:: Wrapper Installer ::
-:::::::::::::::::::::::
+::::::::::::::::::::::::::::
+:: Vyond Legacy Installer ::
+::::::::::::::::::::::::::::
 
-title Wrapper: Offline Installer
+title Vyond Legacy: Offline Installer
 :cls
 cls
 
-echo Wrapper: Offline Installer
-echo Project led by GoTest334. 
-echo Installer is created by the Wrapper Offline Team. 
-echo Installer is recreated by Joseph Animate 2022.
+echo Vyond Legacy: Offline Installer
+echo Project led by Joseph Animate 2022. 
+echo Installer is created by the Joseph Animate 2022. 
 echo:
-echo Enter 1 to install Wrapper: Offline
-echo Enter 2 to install Wrapper: Offline Beta
+echo Enter 1 to install Vyond Legacy: Offline
+echo Enter 2 to install Vyond Legacy: Offline Beta
 echo Enter 0 to close the installer
 :wrapperidle
 echo:
@@ -52,8 +51,8 @@ echo Time to choose. && goto wrapperidle
 cls
 pushd "..\..\"
 echo Cloning repository from GitHub...
-call Wrapper-Offline-Portable-Installer-main\Wrapper-Offline-Portable-Installer-main\PortableGit\bin\git.exe clone https://github.com/Wrapper-Offline/Wrapper-Offline.git
-echo Wrapper: Offline Has Been Installed
+call Vyond-Legacy-Offline-Installer-main\Vyond-Legacy-Offline-Installer-main\PortableGit\bin\git.exe clone https://github.com/josephanimate2021/Vyond-Legacy-Offline.git
+echo Vyond Legacy: Offline Has Been Installed
 pause
 goto cls
 
@@ -61,11 +60,11 @@ goto cls
 cls
 pushd "..\..\"
 echo Cloning repository from GitHub...
-call Wrapper-Offline-Portable-Installer-main\Wrapper-Offline-Portable-Installer-main\PortableGit\bin\git.exe clone https://github.com/Wrapper-Offline/Wrapper-Offline-Beta.git
-echo Wrapper: Offline Beta Has Been Installed
+call Vyond-Legacy-Offline-Installer-main\Vyond-Legacy-Offline-Installer-main\PortableGit\bin\git.exe clone https://github.com/josephanimate2021/Vyond-Legacy-Offline-Beta.git
+echo Vyond Legacy: Offline Beta Has Been Installed
 pause
 goto cls
 
 :exit
-echo the Wrapper: Offline installer has been closed.
+echo the Vyond Legacy: Offline installer has been closed.
 pause & exit
