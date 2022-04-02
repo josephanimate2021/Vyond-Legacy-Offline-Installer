@@ -52,8 +52,8 @@ cls
 pushd "..\..\"
 echo Cloning repository from GitHub...
 call Vyond-Legacy-Offline-Installer-main\Vyond-Legacy-Offline-Installer-main\PortableGit\bin\git.exe clone https://github.com/josephanimate2021/Vyond-Legacy-Offline.git
-cd Vyond-Legacy-Offline
-pushd ".git"
+pushd Vyond-Legacy-Offline
+mkdir .git
 echo Vyond Legacy: Offline Has Been Installed
 pause
 goto cls
@@ -63,8 +63,8 @@ cls
 pushd "..\..\"
 echo Cloning repository from GitHub...
 call Vyond-Legacy-Offline-Installer-main\Vyond-Legacy-Offline-Installer-main\PortableGit\bin\git.exe clone https://github.com/josephanimate2021/Vyond-Legacy-Offline-Beta.git
-cd Vyond-Legacy-Offline-Beta
-pushd ".git"
+pushd Vyond-Legacy-Offline-Beta
+mkdir .git
 echo Vyond Legacy: Offline Beta Has Been Installed
 pause
 goto cls
