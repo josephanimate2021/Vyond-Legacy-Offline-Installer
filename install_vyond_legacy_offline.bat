@@ -32,7 +32,6 @@ echo Project led by Joseph Animate 2022.
 echo Installer is created by the Joseph Animate 2022. 
 echo:
 echo Enter 1 to install Vyond Legacy: Offline
-echo Enter 2 to install Vyond Legacy: Offline Beta
 echo Enter 0 to close the installer
 :wrapperidle
 echo:
@@ -44,7 +43,6 @@ echo:
 set /p CHOICE=Choice:
 if "!choice!"=="0" goto exit
 if "!choice!"=="1" goto download
-if "!choice!"=="2" goto download_beta
 echo Time to choose. && goto wrapperidle
 
 :download
@@ -55,17 +53,7 @@ call Vyond-Legacy-Offline-Installer-main\Vyond-Legacy-Offline-Installer-main\Por
 pushd Vyond-Legacy-Offline
 mkdir .git
 echo Vyond Legacy: Offline Has Been Installed
-pause
-goto cls
-
-:download_beta
-cls
-pushd "..\..\"
-echo Cloning repository from GitHub...
-call Vyond-Legacy-Offline-Installer-main\Vyond-Legacy-Offline-Installer-main\PortableGit\bin\git.exe clone https://github.com/josephanimate2021/Vyond-Legacy-Offline-Beta.git
-echo Vyond Legacy: Offline Beta Has Been Installed
-pause
-goto cls
+pause & exit
 
 :exit
 echo the Vyond Legacy: Offline installer has been closed.
