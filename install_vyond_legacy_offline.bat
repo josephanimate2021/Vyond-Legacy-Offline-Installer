@@ -53,7 +53,9 @@ call Vyond-Legacy-Offline-Installer-main\Vyond-Legacy-Offline-Installer-main\Por
 pushd Vyond-Legacy-Offline
 mkdir .git
 echo Vyond Legacy: Offline Has Been Installed
-pause & exit
+pause
+start Vyond-Legacy-Offline
+exit
 
 :exit
 echo the Vyond Legacy: Offline installer has been closed.
