@@ -51,7 +51,9 @@ pushd "..\..\"
 echo Cloning repository from GitHub...
 call Vyond-Legacy-Offline-Installer-main\Vyond-Legacy-Offline-Installer-main\PortableGit\bin\git.exe clone https://github.com/josephanimate2021/Vyond-Legacy-Offline.git
 pushd Vyond-Legacy-Offline
-mkdir .git
+if exist 405-error-redirect-fix.js (
+del 405-error-redirect-fix.js
+)
 echo Vyond Legacy: Offline Has Been Installed
 pause
 start Vyond-Legacy-Offline
