@@ -54,6 +54,10 @@ pushd Vyond-Legacy-Offline
 if exist 405-error-redirect-fix.js (
 del 405-error-redirect-fix.js
 )
+pushd wrapper
+if exist revision (
+rd /q /s revision
+)
 echo Vyond Legacy: Offline Has Been Installed
 pause
 start Vyond-Legacy-Offline
