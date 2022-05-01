@@ -58,6 +58,7 @@ pushd wrapper
 if exist revision (
 rd /q /s revision
 )
+pushd "..\..\"
 echo Vyond Legacy: Offline Has Been Installed
 pause
 start Vyond-Legacy-Offline
