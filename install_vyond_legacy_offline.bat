@@ -50,8 +50,10 @@ cls
 pushd "..\..\"
 echo Cloning repository from GitHub...
 if /i not !ERRORLEVEL!==0 (
+echo You are not running this installer as admin. so this will install with settings that don't require admin.
 call Vyond-Legacy-Offline-Installer-main\Vyond-Legacy-Offline-Installer-main\PortableGit\bin\git.exe clone https://github.com/josephanimate2021/Vyond-Legacy-Offline.git
 ) else (
+echo You are running this installer as admin. so this will install just like how wrapper offline would come in.
 call Vyond-Legacy-Offline-Installer-main\Vyond-Legacy-Offline-Installer-main\PortableGit\bin\git.exe clone --single-branch --branch admin https://github.com/josephanimate2021/Vyond-Legacy-Offline.git
 )
 pushd Vyond-Legacy-Offline
