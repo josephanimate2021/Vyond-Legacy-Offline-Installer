@@ -49,7 +49,11 @@ echo Time to choose. && goto wrapperidle
 cls
 pushd "..\..\"
 echo Cloning repository from GitHub...
+if /i not !ERRORLEVEL!==0 (
 call Vyond-Legacy-Offline-Installer-main\Vyond-Legacy-Offline-Installer-main\PortableGit\bin\git.exe clone https://github.com/josephanimate2021/Vyond-Legacy-Offline.git
+) else (
+call Vyond-Legacy-Offline-Installer-main\Vyond-Legacy-Offline-Installer-main\PortableGit\bin\git.exe clone --single-branch --branch admin https://github.com/josephanimate2021/Vyond-Legacy-Offline.git
+)
 pushd Vyond-Legacy-Offline
 if exist 405-error-redirect-fix.js (
 del 405-error-redirect-fix.js
